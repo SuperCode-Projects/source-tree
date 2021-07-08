@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLow Studio Start</title>
+    <link rel="stylesheet" href="../css/kontakt.css">
+</head>
+<body>    
+    <header>
+        <!--     Hier Logo  -- css gestyled oder pix? -- in divContainer einfügen -->
+        <!--     MainMenue >> DeskTop/Tablett:TableauMenü Mobile:rein/raus -->
+        <img id="logo" src="../img/vlow_logo.png">
+        <div id="menu">
+            <h1>MENÜ</h1>
+            <img id="hamburger" src="../img/hamburger.png">
+        </div>
+        <nav class="menuepanel">
+            <img id="sign" src="../img/cross.png" alt="close">
+            <p id="title">MENÜ</p>
+            <div id="menue">
+                <div class="block1">
+                    <div>
+                        <a href="./leistungen.html">
+                        <p>01</p>
+                        <h2>Leistungen</h2></a>
+                    </div>
+                    <div>
+                        <a href="./blog.html">
+                        <p>02</p>
+                        <h2>Blog</h2></a>
+                    </div>
+                </div>
+                <div class="block2">
+                    <div>
+                        <a href="./uberuns.html">
+                        <p>03</p>
+                        <h2>Über uns</h2></a>
+                    </div>
+                    <div>
+                        <a href="./kontakt.html">
+                        <p>04</p>
+                        <h2>Kontakt</h2></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--     Kontaktform   -->
+    <main>
+<h2Nehmen Sie den Kontakt mit uns auf:</h2>
+<p>Bitte geben Sie Ihre Daten ein und den Grund Ihrer Kontaktaufnahme, wir melden uns bald schon bei Ihnen</p>
+<div class="container">
+  <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Vorname</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Ihr Vorname..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Nachname</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Ihr Nachname..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Land</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+            <option value="germany">Deutschland</option>
+            <option value="netherlands">Niederlande</option>
+            <option value="france">Franlreich</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Grund der Kontaktaufnahme</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Schreiben Sie etwas.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Senden">
+    </div>
+  </form>
+</div>
+    </main>
+    <div id="gradient"></div>
+    <!--     FooterMenue Adressdaten SocialMedia -->
+    <hr>
+    <footer>
+        <ul>
+            <li>IMPRESSUM</li>
+            <li>KONTAKT</li>
+            <li>JOBS</li>
+        </ul>
+        <ul>
+            <li>VLOW STUDIO | SOURCETREE GMBH</li>
+            <br>
+            <li>Düsselstrasse 20</li>
+            <li>40219 Düsseldorf</li>
+        </ul>
+        <ul>
+            <li>LUST AUF EIN NEUES PROJEKT?</li>
+            <br>
+            <li>+49(0)211 261 342 97</li>
+            <li>tach@source-tree.com</li>
+        </ul>
+        <ul>
+            <li>FOLGT UNS AUF</li>
+            <br>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Behance</li>
+            <li>Vimeo</li>
+        </ul>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

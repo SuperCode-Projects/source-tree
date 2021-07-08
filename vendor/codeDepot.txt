@@ -1,0 +1,67 @@
+ButterCMS (dieser Code stört mein JS >>> Hauptmenü funktioniert nicht auf Click)
+wieder rausgenomme>>
+
+/* Butter CMS */
+import Butter from 'buttercms';
+
+
+/* Run Butter CMS */
+butter.post.list({page: 1, page_size: 10}).then(function(response) {
+    console.log(response)
+  })
+
+
+
+
+
+CIRCLE TEXT 
+
+HTML
+
+<!--just a container used to position in the page-->
+<div class="container">
+  <!--the holders for the text, reuse as desired-->
+  <div class="circTxt" id="test"></div>
+</div>
+
+
+
+
+CSS 
+
+body {
+  background: #111;
+}
+
+.container {
+  /*centers in the container*/
+  text-align: center;
+}
+
+div.circTxt {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: whitesmoke;
+}
+
+
+
+JS 
+
+function circularText(txt, radius, classIndex) {
+  txt = txt.split(""),
+    classIndex = document.getElementsByClassName("circTxt")[classIndex];
+
+  var deg = 360 / txt.length,
+    origin = 0;
+
+  txt.forEach((ea) => {
+    ea = `<p style='height:${radius}px;position:absolute;transform:rotate(${origin}deg);transform-origin:0 100%'>${ea}</p>`;
+    classIndex.innerHTML += ea;
+    origin += deg;
+  });
+}
+
+circularText("this text is in a circle ", 100, 0);

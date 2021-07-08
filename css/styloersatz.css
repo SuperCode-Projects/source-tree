@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+}
+
+#logo {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+section h1 {
+    width: 600px;
+    color: #2117a6;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2.5em
+}
+
+#circletext {
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #2117a6;
+    color: white;
+    text-shadow:    1px  1px 1px #2117a6,
+                    1px -1px 1px #2117a6,
+                    -1px  1px 1px #2117a6,
+                    -1px -1px 1px #2117a6;
+    color: white;
+}
+
+#projects h2 {
+    color: #2117a6;
+}
+
+.karussell {
+    color: #2117a6;
+}
+
+#projects  {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    font-style: italic;
+    color: #2117a6;
+}
+
+#projectstitle { 
+    color: #2117a6;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+#projects h2 {
+    font-size: 2em;
+    color: blu#2117a6e;
+}
+
+#gradient {
+    width: 100%;
+    height: 400px;
+    display: block;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to top, #2117a6 0%, white 50%);
+    margin-bottom: 0;
+}
+
+#blog {
+    width: 100%;
+    margin-top: 0;
+    background: #2117a6;
+    color: white;
+}
+
+#blog h3 {
+    font-size: 10px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+#blog h1 {
+/*     text-shadow: 0 0 2px white;*/   
+    font-style: italic;
+    text-shadow:    1px  1px 1px white,
+                    1px -1px 1px white,
+                    -1px  1px 1px white,
+                    -1px -1px 1px white;
+    color: #2117a6;
+    font-size: 3em;
+    padding-top: 20px;
+}
+
+#blog p {
+    font-size: 10px;
+    color: white;
+    padding-bottom: 30px;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+
+hr { 
+    margin: 0;
+    width: 90%; 
+    height: 1px; 
+    margin: 0 auto;
+    background: white;
+}
+
+footer {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background: #2117a6;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+ul {
+/*     text-transform: uppercase;
+ */ list-style-type: none;
+    font-size: 10px;
+    padding: 0;
+}
+
+

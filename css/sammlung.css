@@ -1,0 +1,94 @@
+/* grid >>> korrigieren und anpassen auch HTML !!! */
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main"
+    "main"
+    "footer footer footer footer";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: 100vh
+}
+
+/* grid items >>> korrigieren und anpassen auch HTML !!! */
+header {
+    grid-area: img;
+    grid-area: img;
+    grid-area: nav;
+}
+
+main {
+    grid-area: h1;
+    grid-area: img;
+    grid-area: img;
+    grid-area: div;
+    grid-area: div;
+    grid-area: article;
+
+}
+
+footer {
+    grid-area: ul;
+    grid-area: ul;
+    grid-area: ul;
+    grid-area: ul;
+}
+
+/* responsive machen >>> korrigieren und anpassen auch HTML !!! */
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "main"
+        "footer";
+
+        grid-template-columns: 1fr;
+        grid-template-rows:
+        auto /* header */
+        minmax (75px, auto) /* nav */
+        1fr /* main */
+        minmax (75px, auto) /* ?? */
+        auto; /* footer */
+    }
+    nav, aside {
+        margin: 0;
+    }
+}
+
+
+/* spezielle Teile Bearbeiten */
+
+header {
+     grid-area: header;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ main {
+
+ }
+
+ footer {
+
+ }
+
+
+ <nav class="nav">
+ MENÜ
+ <img id="hamburger" src="../img/hamburger.png">
+ <a href="./pages/menue.html">Menü</a>
+ <a href="./pages/leistungen.html">Leistungen</a>
+ <a href="./pages/uberuns.html">Über uns</a>
+ <a href="./pages/blog.html">Blog</a>
+ <a href="./pages/impressum.html">Impressum</a>
+ <a href="./pages/kontakt.html">Kontakt</a>
+ <a href="./pages/allerlei.html">Allerlei</a>
+</nav>

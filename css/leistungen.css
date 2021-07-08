@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    width: 10vw;
+    position: relative;
+    top: -1vh;
+   right: -7vw;
+   cursor: pointer;
+}
+.container1{width: 78vw;
+margin: auto;}
+.menuepanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 1920px;
+    height: 1080px;
+    background: #2117a6;
+    display: none;
+   
+}
+
+
+#title {
+    font-size: 1em;
+    color: white;
+    float: right;
+    margin-top: 86px;
+    margin-right: 22px;
+}
+
+#sign {
+    float: right;
+    margin-top: 77px;
+    margin-right: 122px;
+    cursor: pointer;
+}
+
+#menue p {
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+}
+
+#menue h2 {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 5em;
+    margin-bottom: 110px;
+    color: #2117a6;
+    text-shadow:    2px  2px 1px white,
+                    2px -2px 1px white,
+                    -2px  2px 1px white,
+                    -2px -2px 1px white;
+}
+
+
+.block1, .block2 {
+    font-style: italic;
+    margin-left: 60px;
+    margin-top: 90px;
+    transform: rotate(-25deg);
+}
+
+
+#menue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 300px;
+    margin-top: 150px;
+
+}
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10vh;
+   
+}
+
+header h2 {
+    margin-top: 10vh;
+    font-size: 4.5em;
+    font-style: italic;
+    color: #2117a6;
+    width: 30vw;
+}
+.pics{
+    position: relative;
+    left: 60vw;
+}
+.designbereiches{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    width: 40vw; 
+    margin: 0;
+    position: absolute;
+    left: 60vw;
+    top: 50vh;
+}
+.container section {
+    grid-area: section;
+}
+
+.container section p {
+    font-size: 12px;
+    margin-bottom: 2em;
+}
+
+.container section h2 {
+    color: #2117a6;
+    font-style: italic;
+    font-size: 2.2em;
+    font-weight: 600;
+    width: 50vw;
+}
+
+.designbereiche {
+    font-size: 1.1em;
+    font-weight: 600;
+   
+}
+
+#karussell p {
+    font-size: 12px;
+}
+
+#karussell {
+    grid-area: main;
+    color: #2117a6;
+    font-size:1.5vw;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#blog {
+    grid-area: blog;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    background: #2117a6;
+    color: white;
+    margin-bottom: 0;
+}
+#gradient {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to top, #2117a6 0%, white 70%);
+    margin-bottom: 0;
+}
+
+
+#blog h3 {
+    font-size: 10px;
+    color: white;
+    padding-bottom: 30px;
+    margin-left: 20vw;
+}
+
+#blog h1 {
+/*     text-shadow: 0 0 2px white;*/   
+    font-style: italic;
+    text-shadow:    1px  1px 1px white,
+                    1px -1px 1px white,
+                    -1px  1px 1px white,
+                    -1px -1px 1px white;
+    color: #2117a6;
+    font-size: 4em;
+    padding-top: 20px;
+    margin-left: 20vw;
+}
+
+#blog p {
+    font-size: 10px;
+    color: white;
+    padding-bottom: 30px;
+    font-style: italic;
+    padding-top: 5px;
+    margin-bottom: 0;
+    margin-left: 20vw;
+}
+
+hr { 
+    margin: 0;
+    width: 90%; 
+    margin: 0;
+    background: white;
+}
+
+footer {
+    grid-area: footer;
+    decoration: none;
+    background: blue;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding: 40px 80px 80px 80px;
+    background: #2117a6;
+    color: white;
+   
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+footer a {
+        color:inherit;
+        text-decoration:none;
+}
+
+.container{
+
+  margin: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    'header header header '
+    ' section section section '
+    ' main main main '
+    ' blog blog blog '
+    'footer footer footer ';
+  }
+ 
+
+ul {
+/*     text-transform: uppercase;
+ */ list-style-type: none;
+    font-size: 14px;
+    padding: 0;
+}
+
+/* @media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "section"
+        "main"
+        "blog"
+        "footer";
+
+        grid-template-columns: 1fr;
+        grid-template-rows:
+        1fr /* header */
+        minmax (75px, auto) /* nav */
+        1fr /* main */
+        minmax (75px, auto) /* ?? */
+        auto; /* footer */
+    }
+} */
